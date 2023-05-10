@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "75%",
+  fig.align = "center"
+)
+```
+
+# {SurvData}: Collection of survival data sets
+
+This package hosts a large collection of survial and time-to-event datasets, that are collected from a large variety of R packages.
+
+## Installation
+
+```{r, eval = FALSE}
+devtools::install_github("janoleko/SurvData")
+```
+
+## Usage
+
+For information on which data sets are contained please type
+
+```{r, eval=F, message=F, warning = F}
+library(SurvData)
+help(package = "SurvData")
+```
+
+## Info
+
+For information on the data sets please use the help pages, for example
+
+```{r, eval = F, message=F, warning = F}
+?diabetes
+```
